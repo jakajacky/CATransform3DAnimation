@@ -13,6 +13,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    let main = MainView(frame: self.view.bounds)
+    main.backgroundColor = UIColor.white
+    self.view.addSubview(main)
   }
 
   override func didReceiveMemoryWarning() {
